@@ -1,4 +1,16 @@
 <html>
+
+<script>
+    // Make a GET request to the server
+    fetch('https://fantastic-spoon-977j459wq5j5hxqgv-9000.app.github.dev/')
+        .then(response => response.json()) // Parse JSON response
+        .then(data => {
+            alert(data.message); // Handle the data from the server
+        })
+        .catch(error => {
+            console.error('Error:', error); // Handle any errors
+        });
+</script>
     <head>
         <title>VS Code Rocks!</title>
     </head>

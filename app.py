@@ -12,5 +12,11 @@ def hello():
     data = {
         "message": "Hello, World!"
     }
+    print("Hello")
     # Use jsonify to return the data in JSON format
     return jsonify(data)
+
+@app.route("/test")
+def ui():
+    # Define your data here as a dictionary
+    return app.send_static_file("index.html")
